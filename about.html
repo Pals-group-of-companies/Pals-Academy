@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pals Academy – About</title>
+<meta name="description" content="Learn about Pals Academy, our story, values and Head Teacher.">
+<link rel="icon" type="image/png" href="assets/pals-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&amp;family=Gochi+Hand&amp;display=swap" rel="stylesheet">
+<style>
+
+body{margin:0;background:#FFFFFF}
+a{color:#13234A}a:hover{color:#B81F2D}
+.paper{background:#EEF1F7}
+.speckle{background:#FBF1DA}
+.lined{background-color:#FAFBFD;background-image:repeating-linear-gradient(to bottom,transparent 0,transparent 43px,#E8ECF3 43px,#E8ECF3 44px)}
+.note{transform:rotate(var(--r));transition:transform .35s cubic-bezier(.2,.7,.2,1)}
+@media (hover:hover){.note:hover{transform:rotate(0deg) translateY(-8px)}}
+@media (max-width:820px){.notes{grid-template-columns:1fr !important;max-width:420px;margin:0 auto;gap:44px !important}.note-wrap{margin-top:0 !important}.note-wrap:nth-child(2){transform:translateX(8px)}.note-wrap:nth-child(odd){transform:translateX(-8px)}.connector{display:none}}
+
+
+body{margin:0}
+.nl{transition:background .2s}
+.nl:hover{background:#E7EBF3}
+.nav-mob{display:none}
+@media (max-width:1080px){.nav-phone{display:none !important}}
+@media (max-width:880px){.nav-desk,.nav-phone{display:none !important}.nav-mob{display:inline-flex}.nav-grid{grid-template-columns:minmax(0,1fr) auto !important}}
+@media (max-width:400px){.brand-text{font-size:16px !important}}
+
+
+body{margin:0}
+.paper-card{background:#E3EAF8 url(assets/paper-tile.jpg) repeat;background-size:700px 400px;background-blend-mode:multiply}
+
+[hidden]{display:none !important}
+html{scroll-behavior:smooth}
+*{-webkit-tap-highlight-color:transparent}
+</style>
+</head>
+<body>
+<div style="font-family: Outfit, system-ui, sans-serif; color: #1A1F2E; background: #FFFFFF; min-width: 0; overflow-x: hidden">
+
+<div style="position: fixed; top: 0; left: 0; right: 0; z-index: 50"><header style="font-family: Outfit, system-ui, sans-serif; color: #1A1F2E; background: transparent; position: relative; z-index: 5; padding: 10px clamp(10px, 2.4vw, 28px)">
+<div style="max-width: 1240px; margin: 0 auto; background: #FFFFFF; border: 1px solid #E7EAF2; border-radius: 26px; box-shadow: 0 16px 40px -18px rgba(8,16,40,0.45); overflow: hidden">
+<div class="nav-grid" style="padding: 0 clamp(14px, 2.4vw, 24px); min-height: 66px; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 16px">
+
+<a href="index.html" style="justify-self: start; display: inline-flex; align-items: center; gap: 10px; text-decoration: none; min-width: 0"><img src="assets/pals-logo.png" alt="Pals Academy crest" style="height: 44px; width: auto; mix-blend-mode: multiply"><span class="brand-text" style="font-weight: 700; font-size: 18px; color: #13234A; letter-spacing: 0.05em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">PALS ACADEMY</span></a>
+
+<nav class="nav-desk" aria-label="Main" style="display: flex; align-items: center; gap: 2px; background: #F3F5F9; border-radius: 999px; padding: 4px">
+<a class="nl" href="index.html" style="text-decoration: none; font-size: 15px; padding: 0 20px; min-height: 40px; border-radius: 999px; display: inline-flex; align-items: center; color: #4A5163; font-weight: 500;">Home</a><a class="nl" href="about.html" style="text-decoration: none; font-size: 15px; padding: 0 20px; min-height: 40px; border-radius: 999px; display: inline-flex; align-items: center; background: #13234A; color: #FFFFFF; font-weight: 600;" aria-current="page">About</a><a class="nl" href="contact.html" style="text-decoration: none; font-size: 15px; padding: 0 20px; min-height: 40px; border-radius: 999px; display: inline-flex; align-items: center; color: #4A5163; font-weight: 500;">Contact</a>
+</nav>
+
+<div style="justify-self: end; display: flex; align-items: center; gap: 18px">
+<a class="nav-phone" href="tel:+254757319665" style="display: inline-flex; align-items: center; gap: 8px; color: #13234A; text-decoration: none; font-weight: 500; font-size: 15px; white-space: nowrap"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B81F2D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"></path></svg>0757 319 665</a>
+<a class="nav-desk" href="contact.html" style="background: #13234A; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 15px; padding: 0 22px; min-height: 44px; border-radius: 999px; display: inline-flex; align-items: center; white-space: nowrap">Enrol Now</a>
+<button class="nav-mob" type="button" id="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu" style="width: 46px; height: 46px; border: 1px solid #E4E8F1; border-radius: 999px; background: #FFFFFF; color: #13234A; align-items: center; justify-content: center; cursor: pointer">
+<svg id="icon-close" hidden width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+<svg id="icon-open" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"></path></svg>
+</button>
+</div>
+</div>
+
+<div id="mobile-menu" hidden class="nav-mob" style="width: 100%; box-sizing: border-box; flex-direction: column; gap: 4px; padding: 8px clamp(16px, 4vw, 40px) 20px; border-top: 1px solid #ECEEF3">
+<a href="index.html" style="padding: 14px 4px; text-decoration: none; font-size: 20px; border-bottom: 1px solid #F0F2F6; color: #13234A; font-weight: 500;">Home</a><a href="about.html" style="padding: 14px 4px; text-decoration: none; font-size: 20px; border-bottom: 1px solid #F0F2F6; color: #B81F2D; font-weight: 600;">About</a><a href="contact.html" style="padding: 14px 4px; text-decoration: none; font-size: 20px; border-bottom: 1px solid #F0F2F6; color: #13234A; font-weight: 500;">Contact</a>
+<a href="tel:+254757319665" style="padding: 14px 4px; color: #13234A; text-decoration: none; font-size: 17px; font-weight: 500">Call 0757 319 665</a>
+<a href="contact.html" style="margin-top: 6px; background: #13234A; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 16px; min-height: 52px; border-radius: 999px; display: flex; align-items: center; justify-content: center">Enrol Now</a>
+</div>
+</div>
+</header></div>
+<div aria-hidden="true" style="height: 88px"></div>
+
+<!-- INTRO -->
+<section style="padding: clamp(56px, 8vw, 104px) clamp(16px, 4vw, 40px) clamp(48px, 6vw, 72px)">
+<div style="max-width: 900px; margin: 0 auto; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 20px">
+
+<h1 style="margin: 0; font-weight: 600; font-size: clamp(42px, 7vw, 88px); line-height: 1; letter-spacing: -0.035em; color: #13234A">Where little learners feel at home.</h1>
+<p style="margin: 0; font-size: clamp(17px, 1.6vw, 20px); line-height: 1.65; color: #5B6172; max-width: 600px">Pals Academy is a kindergarten in Waithaka offering Baby Class, PP1 and PP2: a joyful, caring start to every child’s school journey.</p>
+</div>
+</section>
+
+<!-- PHOTOS -->
+<section style="padding: 0 clamp(16px, 4vw, 40px)">
+<div style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: clamp(12px, 1.6vw, 20px); align-items: center">
+<img src="assets/kids-drawing.jpg" alt="Children drawing together on a wooden floor" style="width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 26px; display: block">
+<img src="assets/kids-blocks.jpg" alt="Two toddlers playing with wooden blocks" style="width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 26px; display: block">
+</div>
+</section>
+
+<!-- STORY -->
+<section style="padding: clamp(72px, 9vw, 120px) clamp(16px, 4vw, 40px)">
+<div class="paper" style="max-width: 1200px; margin: 0 auto; border-radius: 30px; border: 1px solid transparent; padding: clamp(32px, 5vw, 64px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: clamp(24px, 4vw, 56px)">
+<div style="flex: 1 1 260px"><h2 style="margin: 0; font-weight: 600; font-size: clamp(30px, 3.6vw, 44px); line-height: 1.08; letter-spacing: -0.02em; color: #13234A">Our story</h2></div>
+<div style="flex: 2 1 460px; display: flex; flex-direction: column; gap: 18px; font-size: 17px; line-height: 1.75; color: #4A5163">
+<p style="margin: 0">[How Pals Academy started: who founded it, when, and why.]</p>
+<p style="margin: 0">Today we focus on what matters most in the early years: helping every child feel safe, loved and excited to learn. Small classes mean teachers know each child well, and our days mix learning with play, music, art and time outdoors.</p>
+<p style="margin: 0">Pals Academy is part of the Pals Group, and our school transport is run by our sister company, <a href="https://[pals-travel-website]" style="font-weight: 600">Pals Travel &amp; Leisure</a>.</p>
+</div>
+</div>
+</section>
+
+<!-- VALUES -->
+<section class="lined" style="padding: clamp(64px, 8vw, 104px) clamp(16px, 4vw, 40px) clamp(80px, 10vw, 128px); margin-bottom: clamp(72px, 9vw, 120px)">
+<div style="max-width: 1100px; margin: 0 auto; display: flex; flex-direction: column; gap: clamp(48px, 6vw, 72px)">
+<h2 style="margin: 0; text-align: center; font-weight: 600; font-size: clamp(32px, 4.4vw, 52px); letter-spacing: -0.02em; color: #13234A">Our values</h2>
+<div style="position: relative">
+<svg class="connector" viewBox="0 0 1000 420" preserveAspectRatio="none" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible"><path d="M200 150 C 300 60, 330 300, 420 250 M600 300 C 680 360, 700 120, 790 110" fill="none" stroke="#AEB8CC" stroke-width="2" stroke-dasharray="6 7" vector-effect="non-scaling-stroke"></path></svg>
+<div class="notes" style="position: relative; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(28px, 5vw, 72px); align-items: start">
+<div class="note-wrap" style="margin-top: 0px">
+<article class="note" style="--r: -4deg; position: relative; background: #FFFFFF; border-radius: 26px; padding: 14px; box-shadow: 0 24px 44px -26px rgba(19,35,74,0.45), 0 2px 6px rgba(19,35,74,0.06)">
+<span aria-hidden="true" style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); width: 30px; height: 30px; border-radius: 50%; background: radial-gradient(circle at 35% 30%, #FFFFFF 0 12%, #E2533F 38%); box-shadow: 0 6px 10px -2px rgba(19,35,74,0.35)"></span>
+<div style="background: #FDE7E2; border-radius: 18px; padding: 30px 26px 28px; display: flex; flex-direction: column; gap: 12px; min-height: 260px; box-sizing: border-box">
+<div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 12px"><span style="font-weight: 500; font-size: 30px; color: #C2412E">01</span><img src="assets/icon-care.png" alt="" aria-hidden="true" style="width: 64px; height: auto; display: block"></div>
+<h3 style="margin: 8px 0 0; font-weight: 600; font-size: 28px; letter-spacing: -0.02em; color: #13234A">Care</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4A5163">Every child is safe, seen and loved, every single day.</p>
+</div>
+</article>
+</div>
+<div class="note-wrap" style="margin-top: 110px">
+<article class="note" style="--r: 3deg; position: relative; background: #FFFFFF; border-radius: 26px; padding: 14px; box-shadow: 0 24px 44px -26px rgba(19,35,74,0.45), 0 2px 6px rgba(19,35,74,0.06)">
+<span aria-hidden="true" style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); width: 30px; height: 30px; border-radius: 50%; background: radial-gradient(circle at 35% 30%, #FFFFFF 0 12%, #3D63D6 38%); box-shadow: 0 6px 10px -2px rgba(19,35,74,0.35)"></span>
+<div style="background: #E3EAF8; border-radius: 18px; padding: 30px 26px 28px; display: flex; flex-direction: column; gap: 12px; min-height: 260px; box-sizing: border-box">
+<div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 12px"><span style="font-weight: 500; font-size: 30px; color: #3D63D6">02</span><svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#13234A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 4h7a3 3 0 0 1 3 3v13a2 2 0 0 0-2-2H2zM22 4h-7a3 3 0 0 0-3 3v13a2 2 0 0 1 2-2h8z"></path></svg></div>
+<h3 style="margin: 8px 0 0; font-weight: 600; font-size: 28px; letter-spacing: -0.02em; color: #13234A">Curiosity</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4A5163">A love of learning, grown through play, questions and discovery.</p>
+</div>
+</article>
+</div>
+<div class="note-wrap" style="margin-top: 24px">
+<article class="note" style="--r: -2.5deg; position: relative; background: #FFFFFF; border-radius: 26px; padding: 14px; box-shadow: 0 24px 44px -26px rgba(19,35,74,0.45), 0 2px 6px rgba(19,35,74,0.06)">
+<span aria-hidden="true" style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); width: 30px; height: 30px; border-radius: 50%; background: radial-gradient(circle at 35% 30%, #FFFFFF 0 12%, #E0A93A 38%); box-shadow: 0 6px 10px -2px rgba(19,35,74,0.35)"></span>
+<div style="background: #FBEFCB; border-radius: 18px; padding: 30px 26px 28px; display: flex; flex-direction: column; gap: 12px; min-height: 260px; box-sizing: border-box">
+<div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 12px"><span style="font-weight: 500; font-size: 30px; color: #9A7426">03</span><img src="assets/icon-confidence.png" alt="" aria-hidden="true" style="width: 66px; height: auto; display: block"></div>
+<h3 style="margin: 8px 0 0; font-weight: 600; font-size: 28px; letter-spacing: -0.02em; color: #13234A">Confidence</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4A5163">Children leave us ready, proud and excited for Grade 1.</p>
+</div>
+</article>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- HEAD TEACHER -->
+<section style="padding: 0 clamp(16px, 4vw, 40px) clamp(72px, 9vw, 120px)">
+<div style="max-width: 1100px; margin: 0 auto; background: #13234A; border-radius: 32px; padding: clamp(28px, 5vw, 64px); box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; gap: clamp(28px, 5vw, 64px)">
+<div style="flex: 0 1 300px; margin: 0 auto; position: relative">
+<div style="position: absolute; inset: 14px -14px -14px 14px; border-radius: 26px; background: #D4A64A"></div>
+<img src="assets/head-teacher-placeholder.png" alt="Head Teacher photo placeholder" style="position: relative; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 26px; display: block; image-rendering: pixelated">
+</div>
+<div style="flex: 1 1 380px; display: flex; flex-direction: column; gap: 22px">
+<h2 style="margin: 0; font-weight: 600; font-size: clamp(28px, 3.4vw, 42px); line-height: 1.1; letter-spacing: -0.02em; color: #FFFFFF">A word from our Head Teacher</h2>
+<blockquote style="margin: 0; display: flex; flex-direction: column; gap: 16px; font-size: clamp(17px, 1.6vw, 19px); line-height: 1.7; color: #D5DBEA">
+<p style="margin: 0">Welcome to Pals Academy. The first years of school shape how a child feels about learning for the rest of their life, and we take that seriously.</p>
+<p style="margin: 0">Here, every child is greeted by name, encouraged to ask questions and given the time to grow at their own pace. We play, we sing, we read and we count, and along the way our little ones become confident, kind and curious.</p>
+<p style="margin: 0">Our door is always open. Come and visit us, meet our teachers and see the joy in our classrooms for yourself.</p>
+</blockquote>
+<div style="display: flex; align-items: center; gap: 14px; border-top: 1px solid #2C4278; padding-top: 18px">
+<svg width="56" height="22" viewBox="0 0 90 40" fill="none" stroke="#D4A64A" stroke-width="4" stroke-linecap="round" aria-hidden="true"><path d="M4 30c10-20 20-20 28 0s18 20 26 0 18-20 28 0"></path></svg>
+<p style="margin: 0; font-size: 16px; color: #C3CCE2"><span style="display: block; font-weight: 600; font-size: 18px; color: #FFFFFF">[Head Teacher’s name]</span>Head Teacher, Pals Academy</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CTA -->
+<section style="padding: 0 clamp(16px, 4vw, 40px) clamp(72px, 9vw, 112px)">
+<div class="paper" style="max-width: 1200px; margin: 0 auto; border-radius: 30px; border: 1px solid transparent; padding: clamp(36px, 5vw, 56px); box-sizing: border-box; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 20px">
+<h2 style="margin: 0; font-weight: 600; font-size: clamp(28px, 3.6vw, 44px); line-height: 1.1; letter-spacing: -0.02em; color: #13234A; max-width: 640px">Come and see us. We’d love to show you around.</h2>
+<a href="contact.html" style="background: #B81F2D; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 16px; padding: 0 30px; min-height: 54px; border-radius: 999px; display: inline-flex; align-items: center">Book a visit</a>
+</div>
+</section>
+
+<footer style="font-family: Outfit, system-ui, sans-serif; color: #1A1F2E; background: #FFFFFF; padding: 0 clamp(16px, 4vw, 40px) 28px">
+<div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 22px">
+
+<div class="paper-card" style="position: relative; overflow: hidden; border-radius: 32px; border: 1px solid #D5DEF0; padding: clamp(40px, 6vw, 64px) clamp(22px, 5vw, 64px) clamp(32px, 4vw, 44px); display: flex; flex-direction: column; align-items: center; gap: clamp(28px, 4vw, 40px)">
+
+<svg width="96" height="70" viewBox="0 0 110 80" fill="none" stroke="#13234A" stroke-opacity="0.25" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="position: absolute; bottom: 26px; right: 32px"><path d="M10 52c0-8 6-12 14-12h6c4-14 12-24 26-24s20 10 24 24h10c8 0 12 6 12 12v4H10z"></path><circle cx="32" cy="60" r="8"></circle><circle cx="78" cy="60" r="8"></circle><path d="M55 16v24"></path></svg>
+
+<div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 10px; position: relative">
+<img src="assets/pals-logo.png" alt="Pals Academy crest" style="height: 76px; width: auto; mix-blend-mode: multiply">
+<p style="margin: 0; font-weight: 700; font-size: 20px; letter-spacing: 0.08em; color: #13234A">PALS ACADEMY</p>
+<p style="margin: 0; font-size: 15px; color: #5B6172">A happy kindergarten in Waithaka, Nairobi</p>
+</div>
+
+<nav aria-label="Footer" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 6px; position: relative">
+<a href="index.html" style="color: #13234A; text-decoration: none; font-weight: 500; font-size: 16px; padding: 10px 16px; border-radius: 999px">Home</a>
+<a href="about.html" style="color: #13234A; text-decoration: none; font-weight: 500; font-size: 16px; padding: 10px 16px; border-radius: 999px">About</a>
+<a href="contact.html" style="color: #13234A; text-decoration: none; font-weight: 500; font-size: 16px; padding: 10px 16px; border-radius: 999px">Contact</a>
+<a href="https://[pals-travel-website]" style="color: #13234A; text-decoration: none; font-weight: 500; font-size: 16px; padding: 10px 16px; border-radius: 999px">School Transport</a>
+</nav>
+
+<div style="width: 100%; display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px; position: relative">
+<a href="https://maps.google.com/?q=St+Parthenios+Orthodox+Church+Waithaka" style="background: #FFFFFF; border: 1px solid #E9E4D9; border-radius: 20px; padding: 18px 20px; display: flex; align-items: center; gap: 14px; text-decoration: none; color: #1A1F2E">
+<span style="width: 42px; height: 42px; flex: none; border-radius: 50%; background: #FBEDEE; display: inline-flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B81F2D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"></path><circle cx="12" cy="9" r="2.5"></circle></svg></span>
+<span style="font-size: 15px; line-height: 1.4">Waithaka, next to St Parthenios Orthodox Church</span>
+</a>
+<a href="tel:+254757319665" style="background: #FFFFFF; border: 1px solid #E9E4D9; border-radius: 20px; padding: 18px 20px; display: flex; align-items: center; gap: 14px; text-decoration: none; color: #1A1F2E">
+<span style="width: 42px; height: 42px; flex: none; border-radius: 50%; background: #EAEDF5; display: inline-flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#13234A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"></path></svg></span>
+<span style="font-size: 15px; font-weight: 600">+254 757 319 665</span>
+</a>
+<a href="mailto:enroll@palsacademy.co.ke" style="background: #FFFFFF; border: 1px solid #E9E4D9; border-radius: 20px; padding: 18px 20px; display: flex; align-items: center; gap: 14px; text-decoration: none; color: #1A1F2E">
+<span style="width: 42px; height: 42px; flex: none; border-radius: 50%; background: #F7EBD0; display: inline-flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8A6A1F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 7l9 6 9-6"></path></svg></span>
+<span style="font-size: 15px; font-weight: 600; overflow-wrap: anywhere">enroll@palsacademy.co.ke</span>
+</a>
+</div>
+
+<div style="display: flex; gap: 10px; position: relative">
+<a href="https://twitter.com" aria-label="X (Twitter)" style="width: 44px; height: 44px; border-radius: 50%; background: #13234A; color: #FFFFFF; display: inline-flex; align-items: center; justify-content: center"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4l16 16M20 4L4 20"></path></svg></a>
+<a href="https://facebook.com" aria-label="Facebook" style="width: 44px; height: 44px; border-radius: 50%; background: #13234A; color: #FFFFFF; display: inline-flex; align-items: center; justify-content: center"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h-3a4 4 0 0 0-4 4v3H6v4h2v7h4v-7h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+<a href="https://pinterest.com" aria-label="Pinterest" style="width: 44px; height: 44px; border-radius: 50%; background: #13234A; color: #FFFFFF; display: inline-flex; align-items: center; justify-content: center"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 21l2.5-10M8.5 14.5C7 13.5 7 7 12.5 7c4 0 5 3 4.5 5.5-.5 2.5-2.5 4-4 3.5"></path><circle cx="12" cy="12" r="9"></circle></svg></a>
+<a href="https://instagram.com" aria-label="Instagram" style="width: 44px; height: 44px; border-radius: 50%; background: #13234A; color: #FFFFFF; display: inline-flex; align-items: center; justify-content: center"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="0.6"></circle></svg></a>
+</div>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 20px; padding: 0 8px; font-size: 14px; color: #5B6172">
+<p style="margin: 0">© 2026 Pals Academy · A Pals Group company</p>
+<p style="margin: 0">Learn <span style="color: #D4A64A">•</span> Play <span style="color: #B81F2D">•</span> Grow</p>
+</div>
+</div>
+</footer>
+
+</div>
+<script>
+(function(){var b=document.getElementById('menu-btn'),m=document.getElementById('mobile-menu');if(!b||!m)return;
+b.addEventListener('click',function(){var o=m.hasAttribute('hidden');if(o){m.removeAttribute('hidden')}else{m.setAttribute('hidden','')}
+b.setAttribute('aria-expanded',o?'true':'false');b.setAttribute('aria-label',o?'Close menu':'Open menu');
+document.getElementById('icon-open').toggleAttribute('hidden',o);document.getElementById('icon-close').toggleAttribute('hidden',!o);});})();
+</script>
+</body>
+</html>
