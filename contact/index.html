@@ -5,14 +5,26 @@
 <meta name="color-scheme" content="only light">
 <meta name="theme-color" content="#13234A">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Pals Academy | Contact</title>
-<meta name="description" content="Contact Pals Academy in Waithaka: call +254 757 319 665 or email enroll@palsacademy.co.ke.">
+<title>Contact Pals Academy | Book a school visit</title>
+<meta name="description" content="Contact Pals Academy in Waithaka: call or WhatsApp +254 757 319 665 or email enroll@palsacademy.co.ke to book a school visit.">
+<link rel="canonical" href="https://palsacademy.co.ke/contact">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Pals Academy">
+<meta property="og:title" content="Contact Pals Academy | Book a school visit">
+<meta property="og:description" content="Contact Pals Academy in Waithaka: call or WhatsApp +254 757 319 665 or email enroll@palsacademy.co.ke to book a school visit.">
+<meta property="og:url" content="https://palsacademy.co.ke/contact">
+<meta property="og:image" content="https://palsacademy.co.ke/assets/grad-line.jpg">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="/assets/pals-logo.png">
 <link rel="apple-touch-icon" href="/assets/pals-logo.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&amp;family=Gochi+Hand&amp;display=swap" rel="stylesheet">
 <style>
+@font-face{font-family:Outfit;src:url(/assets/fonts/outfit-400.woff) format("woff");font-weight:100 550;font-style:normal;font-display:swap}
+@font-face{font-family:Outfit;src:url(/assets/fonts/outfit-700.woff) format("woff");font-weight:551 900;font-style:normal;font-display:swap}
+@font-face{font-family:"Gochi Hand";src:url(/assets/fonts/handwriting.woff) format("woff");font-display:swap}
+:focus-visible{outline:3px solid #B81F2D;outline-offset:3px;border-radius:6px}
+.skip{position:absolute;left:12px;top:-60px;z-index:100;background:#13234A;color:#FFFFFF;padding:12px 18px;border-radius:12px;font-weight:600;text-decoration:none}
+.skip:focus{top:12px}
+.legal-links a{color:#5B6172;text-decoration:none}.legal-links a:hover{color:#B81F2D;text-decoration:underline}
 :root{color-scheme:only light}
 .soc{transition:transform .2s}
 @media (hover:hover){.soc:hover{transform:translateY(-3px)}}
@@ -54,6 +66,7 @@ html{scroll-behavior:smooth}
 </style>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 <div style="font-family: Outfit, system-ui, sans-serif; color: #13234A; background: #FFFFFF; min-width: 0; overflow-x: hidden">
 
 <div style="position: fixed; top: 0; left: 0; right: 0; z-index: 50"><header style="font-family: Outfit, system-ui, sans-serif; color: #1A1F2E; background: transparent; position: relative; z-index: 5; padding: 10px clamp(10px, 2.4vw, 28px)">
@@ -86,7 +99,7 @@ html{scroll-behavior:smooth}
 <div aria-hidden="true" style="height: 88px"></div>
 
 <!-- HERO -->
-<section style="position: relative; overflow: hidden; display: flex; flex-direction: column; align-items: center; text-align: center; padding: clamp(40px, 6vw, 80px) clamp(16px, 4vw, 40px) 0; box-sizing: border-box">
+<section id="main" tabindex="-1" style="position: relative; overflow: hidden; display: flex; flex-direction: column; align-items: center; text-align: center; padding: clamp(40px, 6vw, 80px) clamp(16px, 4vw, 40px) 0; box-sizing: border-box">
 
 <div class="hello" style="position: relative; z-index: 3; width: 100%; max-width: 1200px; display: flex; flex-direction: column; align-items: center; gap: 24px; padding: clamp(8px, 2vw, 24px) 0 clamp(36px, 5vw, 64px)">
 <h1 style="margin: 0; font-weight: 600; font-size: clamp(44px, 8vw, 116px); line-height: 0.96; letter-spacing: -0.045em; max-width: 760px">Don’t be shy,<br>say hello!</h1>
@@ -127,22 +140,26 @@ html{scroll-behavior:smooth}
 </div>
 
 <div style="flex: 1 1 420px">
-<div id="enquiry-form" style="display: flex; flex-direction: column; gap: 14px">
+<form id="enquiry-form" novalidate style="display: flex; flex-direction: column; gap: 14px">
 <label for="c-name" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Your name</label>
-<input id="c-name" class="field" type="text" placeholder="Your name">
+<input id="c-name" name="name" class="field" type="text" placeholder="Your name" autocomplete="name" required maxlength="80">
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 14px">
 <label for="c-phone" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Phone</label>
-<input id="c-phone" class="field" type="tel" placeholder="Phone number">
+<input id="c-phone" name="phone" class="field" type="tel" placeholder="Phone number" autocomplete="tel" inputmode="tel" required maxlength="20">
 <label for="c-class" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Class</label>
-<select id="c-class" class="field"><option>Baby Class</option><option>PP1</option><option>PP2</option><option>Not sure yet</option></select>
+<select id="c-class" name="class" class="field"><option>Baby Class</option><option>PP1</option><option>PP2</option><option>Not sure yet</option></select>
 </div>
 <label for="c-msg" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Message</label>
-<textarea id="c-msg" class="field" rows="4" placeholder="Tell us about your child, or when you’d like to visit"></textarea>
-<button type="button" id="send-btn" style="align-self: flex-start; margin-top: 4px; min-height: 56px; padding: 0 30px; border: 0; border-radius: 999px; background: #13234A; color: #FFFFFF; font: inherit; font-weight: 600; font-size: 16px; cursor: pointer; display: inline-flex; align-items: center; gap: 10px">Send message<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></button>
-</div>
-<div id="enquiry-thanks" hidden style="background: #FFFFFF; border: 1.5px solid #13234A; border-radius: 26px; padding: 40px 32px; display: flex; flex-direction: column; align-items: flex-start; gap: 12px">
+<textarea id="c-msg" name="message" class="field" rows="4" maxlength="2000" placeholder="Ask us anything, or tell us when you’d like to visit"></textarea>
+<p style="margin: 0; font-size: 14px; line-height: 1.5; color: #13234A">Please don’t include medical details, ID numbers or birth certificate numbers here. We’ll ask for admission documents in person.</p>
+<label style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)" for="c-website">Leave this empty</label><input id="c-website" name="_honey" type="text" tabindex="-1" autocomplete="off" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">
+<label style="display: flex; align-items: flex-start; gap: 10px; font-size: 15px; line-height: 1.5; cursor: pointer"><input id="c-consent" type="checkbox" required style="width: 22px; height: 22px; margin: 1px 0 0; flex: none; accent-color: #13234A"><span>I agree that Pals Academy can use these details to reply to my enquiry, as set out in the <a href="/privacy" style="font-weight: 600">Privacy Policy</a>.</span></label>
+<p id="form-error" role="alert" hidden style="margin: 0; background: #FFFFFF; border: 1.5px solid #B81F2D; border-radius: 14px; padding: 12px 16px; font-size: 15px; color: #8E1622"></p>
+<button type="submit" id="send-btn" style="align-self: flex-start; margin-top: 4px; min-height: 56px; padding: 0 30px; border: 0; border-radius: 999px; background: #13234A; color: #FFFFFF; font: inherit; font-weight: 600; font-size: 16px; cursor: pointer; display: inline-flex; align-items: center; gap: 10px"><span id="send-label">Send message</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></button>
+</form>
+<div id="enquiry-thanks" hidden tabindex="-1" style="background: #FFFFFF; border: 1.5px solid #13234A; border-radius: 26px; padding: 40px 32px; display: flex; flex-direction: column; align-items: flex-start; gap: 12px">
 <h2 style="margin: 0; font-weight: 600; font-size: 34px; letter-spacing: -0.02em">Thank you!</h2>
-<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #4A5163">Your message is on its way. We’ll call or email you very soon.</p>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #4A5163">Your message is on its way. We’ll call you back very soon.</p>
 <button type="button" id="reset-btn" style="margin-top: 6px; min-height: 48px; padding: 0 24px; border: 1.5px solid #13234A; border-radius: 999px; background: #FFFFFF; color: #13234A; font: inherit; font-weight: 600; font-size: 15px; cursor: pointer">Send another</button>
 </div>
 </div>
@@ -194,7 +211,7 @@ html{scroll-behavior:smooth}
 </div>
 
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 20px; padding: 0 8px; font-size: 14px; color: #5B6172">
-<p style="margin: 0">© 2026 Pals Academy · A Pals Group company</p>
+<div style="display: flex; flex-direction: column; gap: 6px"><p style="margin: 0">© 2026 Pals Academy · A Pals Group company</p><p class="legal-links" style="margin: 0; display: flex; flex-wrap: wrap; gap: 6px 16px"><a href="/privacy">Privacy Policy</a><a href="/terms">Terms</a><a href="/cookies">Cookies</a></p></div>
 <p style="margin: 0">Learn <span style="color: #D4A64A">•</span> Play <span style="color: #B81F2D">•</span> Grow</p>
 </div>
 </div>
@@ -208,8 +225,22 @@ b.setAttribute('aria-expanded',o?'true':'false');b.setAttribute('aria-label',o?'
 document.getElementById('icon-open').toggleAttribute('hidden',o);document.getElementById('icon-close').toggleAttribute('hidden',!o);});})();
 
 (function(){var form=document.getElementById('enquiry-form'),thanks=document.getElementById('enquiry-thanks');
-document.getElementById('send-btn').addEventListener('click',function(){form.hidden=true;thanks.hidden=false;});
-document.getElementById('reset-btn').addEventListener('click',function(){thanks.hidden=true;form.hidden=false;});
+var err=document.getElementById('form-error'),btn=document.getElementById('send-btn'),lbl=document.getElementById('send-label'),busy=false;
+function showErr(m){err.innerHTML=m;err.hidden=false;}
+form.addEventListener('submit',function(e){e.preventDefault();if(busy)return;err.hidden=true;
+var name=form.name.value.trim(),phone=form.phone.value.trim(),msg=form.message.value.trim();
+if(!name||!phone){showErr('Please add your name and a phone number so we can call you back.');(name?form.phone:form.name).focus();return;}
+if(phone.replace(/[^0-9]/g,'').length<9){showErr('Please check the phone number.');form.phone.focus();return;}
+if(!document.getElementById('c-consent').checked){showErr('Please tick the box to agree to the Privacy Policy so we can reply.');document.getElementById('c-consent').focus();return;}
+if(form._honey.value){return;}
+busy=true;btn.disabled=true;btn.style.opacity='0.7';lbl.textContent='Sending…';
+fetch('https://formsubmit.co/ajax/enroll@palsacademy.co.ke',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},
+body:JSON.stringify({_subject:'New enquiry from the Pals Academy website',_template:'table',_captcha:'false',Name:name,Phone:phone,Class:form['class'].value,Message:msg||'(no message)'})})
+.then(function(r){if(!r.ok)throw new Error('send');return r.json();})
+.then(function(){form.reset();form.hidden=true;thanks.hidden=false;thanks.focus();})
+.catch(function(){showErr('Sorry, your message didn’t go through. Please call or WhatsApp us on <a href="https://wa.me/254757319665" style="font-weight:600">0757 319 665</a>.');})
+.then(function(){busy=false;btn.disabled=false;btn.style.opacity='';lbl.textContent='Send message';});});
+document.getElementById('reset-btn').addEventListener('click',function(){thanks.hidden=true;form.hidden=false;form.name.focus();});
 var eyes=[].slice.call(document.querySelectorAll('[data-eye]')),pending=null,raf=null;
 function look(x,y){eyes.forEach(function(el){var r=el.getBoundingClientRect(),cx=r.left+r.width/2,cy=r.top+r.height/2,dx=x-cx,dy=y-cy,d=Math.hypot(dx,dy)||1,k=Math.min(1,d/260);
 el.querySelector('.pupil').style.transform='translate('+(dx/d*r.width*0.26*k).toFixed(1)+'px,'+(dy/d*r.height*0.28*k).toFixed(1)+'px)';});}

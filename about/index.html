@@ -5,14 +5,26 @@
 <meta name="color-scheme" content="only light">
 <meta name="theme-color" content="#13234A">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Pals Academy – About</title>
-<meta name="description" content="Learn about Pals Academy, our story, values and Head Teacher.">
+<title>About Pals Academy | Our story, values and teachers</title>
+<meta name="description" content="Learn about Pals Academy in Waithaka: our story, our values, a word from our Head Teacher and some of our teachers.">
+<link rel="canonical" href="https://palsacademy.co.ke/about">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Pals Academy">
+<meta property="og:title" content="About Pals Academy | Our story, values and teachers">
+<meta property="og:description" content="Learn about Pals Academy in Waithaka: our story, our values, a word from our Head Teacher and some of our teachers.">
+<meta property="og:url" content="https://palsacademy.co.ke/about">
+<meta property="og:image" content="https://palsacademy.co.ke/assets/grad-line.jpg">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="/assets/pals-logo.png">
 <link rel="apple-touch-icon" href="/assets/pals-logo.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&amp;family=Gochi+Hand&amp;display=swap" rel="stylesheet">
 <style>
+@font-face{font-family:Outfit;src:url(/assets/fonts/outfit-400.woff) format("woff");font-weight:100 550;font-style:normal;font-display:swap}
+@font-face{font-family:Outfit;src:url(/assets/fonts/outfit-700.woff) format("woff");font-weight:551 900;font-style:normal;font-display:swap}
+@font-face{font-family:"Gochi Hand";src:url(/assets/fonts/handwriting.woff) format("woff");font-display:swap}
+:focus-visible{outline:3px solid #B81F2D;outline-offset:3px;border-radius:6px}
+.skip{position:absolute;left:12px;top:-60px;z-index:100;background:#13234A;color:#FFFFFF;padding:12px 18px;border-radius:12px;font-weight:600;text-decoration:none}
+.skip:focus{top:12px}
+.legal-links a{color:#5B6172;text-decoration:none}.legal-links a:hover{color:#B81F2D;text-decoration:underline}
 :root{color-scheme:only light}
 .soc{transition:transform .2s}
 @media (hover:hover){.soc:hover{transform:translateY(-3px)}}
@@ -47,6 +59,7 @@ html{scroll-behavior:smooth}
 </style>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 <div style="font-family: Outfit, system-ui, sans-serif; color: #1A1F2E; background: #FFFFFF; min-width: 0; overflow-x: hidden">
 
 <div style="position: fixed; top: 0; left: 0; right: 0; z-index: 50"><header style="font-family: Outfit, system-ui, sans-serif; color: #1A1F2E; background: transparent; position: relative; z-index: 5; padding: 10px clamp(10px, 2.4vw, 28px)">
@@ -79,7 +92,7 @@ html{scroll-behavior:smooth}
 <div aria-hidden="true" style="height: 88px"></div>
 
 <!-- INTRO -->
-<section style="padding: clamp(56px, 8vw, 104px) clamp(16px, 4vw, 40px) clamp(48px, 6vw, 72px)">
+<section id="main" tabindex="-1" style="padding: clamp(56px, 8vw, 104px) clamp(16px, 4vw, 40px) clamp(48px, 6vw, 72px)">
 <div style="max-width: 900px; margin: 0 auto; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 20px">
 
 <h1 style="margin: 0; font-weight: 600; font-size: clamp(42px, 7vw, 88px); line-height: 1; letter-spacing: -0.035em; color: #13234A">Where little learners feel at home.</h1>
@@ -238,7 +251,7 @@ html{scroll-behavior:smooth}
 </div>
 
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 20px; padding: 0 8px; font-size: 14px; color: #5B6172">
-<p style="margin: 0">© 2026 Pals Academy · A Pals Group company</p>
+<div style="display: flex; flex-direction: column; gap: 6px"><p style="margin: 0">© 2026 Pals Academy · A Pals Group company</p><p class="legal-links" style="margin: 0; display: flex; flex-wrap: wrap; gap: 6px 16px"><a href="/privacy">Privacy Policy</a><a href="/terms">Terms</a><a href="/cookies">Cookies</a></p></div>
 <p style="margin: 0">Learn <span style="color: #D4A64A">•</span> Play <span style="color: #B81F2D">•</span> Grow</p>
 </div>
 </div>
